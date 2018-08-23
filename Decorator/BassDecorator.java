@@ -1,16 +1,16 @@
 public class BassDecorator extends MusicianDecorator {
 
    public BassDecorator(Artist artist) {
-      super(artist);		
+      super(artist);
    }
 
    @Override
    public void performance() {
       artist.performance();	       
-      playNewInstrument(artist);
+      playNewInstrument();
    }
 
-   private void playNewInstrument(Artist artist){
+   private void playNewInstrument(){
       System.out.println("Playing the bass");
    }
 }
